@@ -4,8 +4,8 @@ const requireComponent = require.context('../../../components/common', false, /\
 console.log(requireComponent.keys())
 const install = (Vue) => {
   requireComponent.keys().forEach((fileName) => {
-    let config = requireComponent(fileName)
-    let componentName = fileName.replace(/^\.\//, '').replace(/\.\w+$/, '')
+    const config = requireComponent(fileName)
+    const componentName = fileName.replace(/^\.\//, '').replace(/\.\w+$/, '')
     Vue.component(componentName.replace(/\//, '-'), config.default || config)
   })
 }

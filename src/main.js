@@ -17,7 +17,7 @@ import request from './assets/js/request'
 import Mitt from 'mitt'
 
 // 然后在main.js文件里进行引用
-import '@/assets/js/core/index'
+// import '@/assets/js/core/index'
 import common from '@/assets/js/core/config'
 
 /**

@@ -1,6 +1,6 @@
 export default function getPreMonth () {
   const dateStr = new Date()
-  let year = dateStr.getFullYear()
+  const year = dateStr.getFullYear()
   let month = dateStr.getMonth() // 获取当前日期的月份
   let year2 = year + ''
   if (month === 0) {
@@ -10,6 +10,6 @@ export default function getPreMonth () {
   if (month < 10) {
     month = '0' + month
   }
-  let rq = year2 + '' + month
+  const rq = year2 + '' + month
   return rq
 }

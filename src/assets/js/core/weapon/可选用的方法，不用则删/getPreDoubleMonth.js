@@ -1,7 +1,7 @@
 // 初始判断，大于25号就取上个月，小月25号就取上上个月
 export default function getPreDoubleMonth (initDate = 25) {
   const dateStr = new Date()
-  let year = dateStr.getFullYear()
+  const year = dateStr.getFullYear()
   let month
   if (dateStr.getDate() >= initDate) {
     month = dateStr.getMonth() // 获取上个月份
@@ -20,6 +20,6 @@ export default function getPreDoubleMonth (initDate = 25) {
   if (month < 10) {
     month = '0' + month
   }
-  let rq = year2 + '' + month
+  const rq = year2 + '' + month
   return rq
 }

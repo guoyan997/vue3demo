@@ -1,8 +1,8 @@
 /**
  * @description 接口列表
  */
-let HOST = process.env.VUE_APP_API_HOST || '' // 根据不同的环境，自动切换接口地址
-let HostUrl = HOST + 'requerstInterface/queryInterface/'
+const HOST = process.env.VUE_APP_API_HOST || '' // 根据不同的环境，自动切换接口地址
+const HostUrl = HOST + 'requerstInterface/queryInterface/'
 
 const API = {
   // casUrl: HOST + 'validate/TestCall',
